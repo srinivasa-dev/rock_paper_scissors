@@ -130,7 +130,7 @@ class _GameScreenState extends State<GameScreen> with TickerProviderStateMixin {
   final Uri _gitUrl = Uri.parse('https://github.com/srinivasa-dev/rock_paper_scissors');
   final Uri _androidUrl = Uri.parse('https://drive.google.com/uc?export=download&id=1NTHMP30Cg7PM8l1y6tYWjS_CWr6u-9i7');
   final Uri _webUrl = Uri.parse('https://rps.divcodes.in');
-  final Uri _windowsUrl = Uri.parse('https://drive.google.com/uc?export=download&id=1UExY3gyJfYw39Hk2DHZLuckhrD9RRfih');
+  final Uri _windowsUrl = Uri.parse('https://drive.google.com/uc?export=download&id=1eg_WW2Tw5XGPynFob3-MG9PjhPAL6yDr');
 
   Future<void> _launchUrl(url) async {
     if (!await launchUrl(url, mode: LaunchMode.externalApplication)) {
