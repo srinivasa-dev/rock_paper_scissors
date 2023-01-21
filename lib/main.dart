@@ -14,6 +14,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
         useMaterial3: true,
+        primaryColor: AppColors.primary,
+        primaryColorLight: AppColors.primary,
         scaffoldBackgroundColor: AppColors.background,
         brightness: Brightness.light,
         fontFamily: 'Roboto',
@@ -46,6 +48,11 @@ class MyApp extends StatelessWidget {
             fontSize: 22.0,
             color: AppColors.textBlack,
             fontWeight: FontWeight.w300,
+          ),
+          bodyText1: TextStyle(
+            fontSize: 18.0,
+            color: AppColors.textBlack,
+            fontWeight: FontWeight.w400,
           ),
         ),
         textButtonTheme: TextButtonThemeData(
