@@ -379,7 +379,8 @@ class _GameScreenState extends State<GameScreen> with TickerProviderStateMixin {
                             text: 'also available for ',
                             style: Theme.of(context).textTheme.bodyText1,
                           ),
-                          defaultTargetPlatform != TargetPlatform.android ? linkText(text: 'Android ', url: _androidUrl) : const TextSpan(),
+                          kIsWeb ? linkText(text: 'Android ', url: _androidUrl) : defaultTargetPlatform != TargetPlatform.android
+                              ? linkText(text: 'Android ', url: _androidUrl) : const TextSpan(),
                           TextSpan(
                             text: defaultTargetPlatform == TargetPlatform.windows ? ' and ' : '',
                             style: Theme.of(context).textTheme.bodyText1,
