@@ -51,6 +51,7 @@ class _GameScreenState extends State<GameScreen> with TickerProviderStateMixin {
   bool _hideOptions = true;
   bool _time = false;
   bool _vibrate = true;
+  bool _lightTheme = true;
 
   late AnimationController _animationController;
   late Animation<Offset> _offsetFloat;
@@ -140,18 +141,18 @@ class _GameScreenState extends State<GameScreen> with TickerProviderStateMixin {
 
   @override
   Widget build(BuildContext context) {
+    final Brightness brightness = MediaQuery.platformBrightnessOf(context);
     return Scaffold(
       appBar: AppBar(
-        systemOverlayStyle: SystemUiOverlayStyle.dark,
+        systemOverlayStyle: brightness == Brightness.dark ? SystemUiOverlayStyle.light : SystemUiOverlayStyle.dark,
         toolbarHeight: 56.0,
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
           },
           splashRadius: 10.0,
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back_ios_new,
-            color: AppColors.textBlack,
           ),
         ),
         actions: [
@@ -160,9 +161,8 @@ class _GameScreenState extends State<GameScreen> with TickerProviderStateMixin {
               settingsDialog();
             },
             splashRadius: 10.0,
-            icon: Icon(
+            icon: const Icon(
               Icons.settings_rounded,
-              color: AppColors.textBlack,
             ),
           ),
         ],
@@ -346,9 +346,8 @@ class _GameScreenState extends State<GameScreen> with TickerProviderStateMixin {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Icon(
+                              const Icon(
                                 Icons.vibration,
-                                color: AppColors.textBlack,
                               ),
                               Switch(
                                 value: _vibrate,

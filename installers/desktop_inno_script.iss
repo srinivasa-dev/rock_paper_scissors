@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Rock Paper Scissors"
-#define MyAppVersion "1.0"
+#define MyAppVersion "1.1"
 #define MyAppPublisher "Srinivasa Yadav"
 #define MyAppURL "rsp.divcodes.in"
 #define MyAppExeName "rock_paper_scissors.exe"

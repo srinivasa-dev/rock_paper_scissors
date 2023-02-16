@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      themeMode: ThemeMode.system,
       theme: ThemeData(
         useMaterial3: true,
         primaryColor: AppColors.primary,
@@ -52,6 +53,58 @@ class MyApp extends StatelessWidget {
           bodyText1: TextStyle(
             fontSize: 18.0,
             color: AppColors.textBlack,
+            fontWeight: FontWeight.w400,
+          ),
+        ),
+        textButtonTheme: TextButtonThemeData(
+          style: ButtonStyle(
+            backgroundColor: MaterialStateProperty.all<Color>(AppColors.primary),
+            shape: MaterialStateProperty.all<RoundedRectangleBorder>(RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(10.0),
+            )),
+          ),
+        ),
+      ),
+      darkTheme: ThemeData(
+        useMaterial3: true,
+        primaryColor: AppColors.primary,
+        primaryColorLight: AppColors.primary,
+        scaffoldBackgroundColor: AppColors.backgroundDark,
+        brightness: Brightness.dark,
+        fontFamily: 'Roboto',
+        appBarTheme: const AppBarTheme(
+          toolbarHeight: 0.0,
+          backgroundColor: Colors.transparent,
+        ),
+        textTheme: TextTheme(
+          headlineLarge: TextStyle(
+            color: AppColors.textWhite,
+            fontSize: 45.0,
+            fontWeight: FontWeight.w900,
+          ),
+          headline1: TextStyle(
+            color: AppColors.textWhite,
+            fontSize: 45.0,
+            fontWeight: FontWeight.w200,
+          ),
+          headline2: TextStyle(
+            color: AppColors.textWhite,
+            fontSize: 25.0,
+            fontWeight: FontWeight.w900,
+          ),
+          button: TextStyle(
+            fontSize: 18.0,
+            color: AppColors.textWhite,
+            fontWeight: FontWeight.w400,
+          ),
+          subtitle1: TextStyle(
+            fontSize: 22.0,
+            color: AppColors.textWhite,
+            fontWeight: FontWeight.w300,
+          ),
+          bodyText1: TextStyle(
+            fontSize: 18.0,
+            color: AppColors.textWhite,
             fontWeight: FontWeight.w400,
           ),
         ),
