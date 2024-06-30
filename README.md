@@ -6,6 +6,6 @@ A Rock Paper Scissors Game which is build on flutter and can run on Android, IOS
 
 | OS | Actions                                                                                                                                                                |
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Android   | [![Download apk](https://img.shields.io/badge/Download-apk-green)](https://github.com/srinivasa-dev/rock_paper_scissors/releases/download/1.1/rock_paper_scissors.apk) |
+| Android   | [![Download apk](https://img.shields.io/badge/Download-apk-green)](https://github.com/srinivasa-dev/rock_paper_scissors/releases/download/1.2/rock_paper_scissors.apk) |
 | Web   | [![Open Web](https://img.shields.io/badge/Open-web-orange)](https://rps.srinivasa.dev)                                                                                 |
-| Windows | [![Download exe](https://img.shields.io/badge/Download-exe-blue)](https://github.com/srinivasa-dev/rock_paper_scissors/releases/download/1.1/rock_paper_scissors.exe)  |
+| Windows | [![Download exe](https://img.shields.io/badge/Download-exe-blue)](https://github.com/srinivasa-dev/rock_paper_scissors/releases/download/1.2/rock_paper_scissors.exe)  |
