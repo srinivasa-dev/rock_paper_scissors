@@ -200,7 +200,7 @@ class _GameScreenState extends State<GameScreen> with TickerProviderStateMixin {
                             ? 'YOU WIN! 😃' : _selectedHand!.handName == 'Scissors' && _computerHand!.handName == 'Paper'
                             ? 'YOU WIN! 😃' : _selectedHand!.handName == _computerHand!.handName
                             ? 'IT\'S A DRAW! 🥴' : 'YOU LOSE! 😭' : '',
-                        style: Theme.of(context).textTheme.headline2,
+                        style: Theme.of(context).textTheme.displayMedium,
                       ),
                       const SizedBox(height: 10.0,),
                       SizedBox(
@@ -219,7 +219,7 @@ class _GameScreenState extends State<GameScreen> with TickerProviderStateMixin {
                           },
                           child: Text(
                             'PLAY AGAIN!',
-                            style: Theme.of(context).textTheme.button,
+                            style: Theme.of(context).textTheme.labelLarge,
                           ),
                         ),
                       ),
@@ -235,7 +235,7 @@ class _GameScreenState extends State<GameScreen> with TickerProviderStateMixin {
                 children: [
                   Text(
                     'PICK AN OPTION:',
-                    style: Theme.of(context).textTheme.subtitle1,
+                    style: Theme.of(context).textTheme.titleMedium,
                   ),
                   const SizedBox(height: 25.0,),
                   Row(
@@ -368,32 +368,32 @@ class _GameScreenState extends State<GameScreen> with TickerProviderStateMixin {
                     RichText(
                       text: TextSpan(
                         text: 'This app is built on ',
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyLarge,
                         children: [
                           TextSpan(
                             text: 'Flutter ',
-                            style: Theme.of(context).textTheme.bodyText1!.copyWith(color: const Color(0xFF757575),  fontWeight: FontWeight.w500,),
+                            style: Theme.of(context).textTheme.bodyLarge!.copyWith(color: const Color(0xFF757575),  fontWeight: FontWeight.w500,),
                           ),
                           TextSpan(
                             text: 'also available for ',
-                            style: Theme.of(context).textTheme.bodyText1,
+                            style: Theme.of(context).textTheme.bodyLarge,
                           ),
                           kIsWeb ? linkText(text: 'Android ', url: _androidUrl) : defaultTargetPlatform != TargetPlatform.android
                               ? linkText(text: 'Android ', url: _androidUrl) : const TextSpan(),
                           TextSpan(
                             text: defaultTargetPlatform == TargetPlatform.windows ? ' and ' : '',
-                            style: Theme.of(context).textTheme.bodyText1,
+                            style: Theme.of(context).textTheme.bodyLarge,
                           ),
                           !kIsWeb ? linkText(text: 'Web ', url: _webUrl) : const TextSpan(),
                           TextSpan(
                             text: defaultTargetPlatform != TargetPlatform.windows ? ' and ' : '',
-                            style: Theme.of(context).textTheme.bodyText1,
+                            style: Theme.of(context).textTheme.bodyLarge,
                           ),
                           kIsWeb ? linkText(text: 'Windows ', url: _windowsUrl) : defaultTargetPlatform != TargetPlatform.windows
                               ? linkText(text: 'Windows ', url: _windowsUrl) : const TextSpan(),
                           TextSpan(
                             text: '.\n\nSource code available on ',
-                            style: Theme.of(context).textTheme.bodyText1,
+                            style: Theme.of(context).textTheme.bodyLarge,
                           ),
                           linkText(text: 'GitHub ', url: _gitUrl),
                         ],
@@ -413,7 +413,7 @@ class _GameScreenState extends State<GameScreen> with TickerProviderStateMixin {
               ),
               child: Text(
                 'CLOSE',
-                style: Theme.of(context).textTheme.button!.copyWith(color: AppColors.primary, fontSize: 15.0,),
+                style: Theme.of(context).textTheme.labelLarge!.copyWith(color: AppColors.primary, fontSize: 15.0,),
               ),
             ),
           ],
@@ -429,7 +429,7 @@ class _GameScreenState extends State<GameScreen> with TickerProviderStateMixin {
   }) {
     return TextSpan(
       text: text,
-      style: Theme.of(context).textTheme.bodyText1!.copyWith(color: AppColors.primary),
+      style: Theme.of(context).textTheme.bodyLarge!.copyWith(color: AppColors.primary),
       recognizer: TapGestureRecognizer()..onTap = () {
         _launchUrl(url);
       },

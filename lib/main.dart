@@ -30,27 +30,27 @@ class MyApp extends StatelessWidget {
             fontSize: 45.0,
             fontWeight: FontWeight.w900,
           ),
-          headline1: TextStyle(
+          displayLarge: TextStyle(
             color: AppColors.textWhite,
             fontSize: 45.0,
             fontWeight: FontWeight.w200,
           ),
-          headline2: TextStyle(
+          displayMedium: TextStyle(
             color: AppColors.textBlack,
             fontSize: 25.0,
             fontWeight: FontWeight.w900,
           ),
-          button: TextStyle(
+          labelLarge: TextStyle(
             fontSize: 18.0,
             color: AppColors.textWhite,
             fontWeight: FontWeight.w400,
           ),
-          subtitle1: TextStyle(
+          titleMedium: TextStyle(
             fontSize: 22.0,
             color: AppColors.textBlack,
             fontWeight: FontWeight.w300,
           ),
-          bodyText1: TextStyle(
+          bodyLarge: TextStyle(
             fontSize: 18.0,
             color: AppColors.textBlack,
             fontWeight: FontWeight.w400,
@@ -82,27 +82,27 @@ class MyApp extends StatelessWidget {
             fontSize: 45.0,
             fontWeight: FontWeight.w900,
           ),
-          headline1: TextStyle(
+          displayLarge: TextStyle(
             color: AppColors.textWhite,
             fontSize: 45.0,
             fontWeight: FontWeight.w200,
           ),
-          headline2: TextStyle(
+          displayMedium: TextStyle(
             color: AppColors.textWhite,
             fontSize: 25.0,
             fontWeight: FontWeight.w900,
           ),
-          button: TextStyle(
+          labelLarge: TextStyle(
             fontSize: 18.0,
             color: AppColors.textWhite,
             fontWeight: FontWeight.w400,
           ),
-          subtitle1: TextStyle(
+          titleMedium: TextStyle(
             fontSize: 22.0,
             color: AppColors.textWhite,
             fontWeight: FontWeight.w300,
           ),
-          bodyText1: TextStyle(
+          bodyLarge: TextStyle(
             fontSize: 18.0,
             color: AppColors.textWhite,
             fontWeight: FontWeight.w400,
@@ -144,7 +144,7 @@ class _HomePageState extends State<HomePage> {
           children: [
             Text(
               'ROCK\n/ PAPER /\nSCISSORS',
-              style: Theme.of(context).textTheme.headline1,
+              style: Theme.of(context).textTheme.displayLarge,
               textAlign: TextAlign.center,
             ),
             Image.asset(
@@ -163,7 +163,7 @@ class _HomePageState extends State<HomePage> {
                 ),
                 child: Text(
                   'START',
-                  style: Theme.of(context).textTheme.button!.copyWith(color: AppColors.textBlack),
+                  style: Theme.of(context).textTheme.labelLarge!.copyWith(color: AppColors.textBlack),
                 ),
               ),
             ),
